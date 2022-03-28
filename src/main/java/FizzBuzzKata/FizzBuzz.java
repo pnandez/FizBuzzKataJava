@@ -9,8 +9,8 @@ public class FizzBuzz {
         buzz = 5;
     }
 
-    public String play(int n) {
-        String sol = "";
+    public String play(Integer number) {
+        String solution = "";
 
         if (number <= 0)
             return "Error. Número no aceptado";
