@@ -12,14 +12,18 @@ public class FizzBuzz {
     public String play(int n) {
         String sol = "";
 
-        if (n <= 0)
+        if (number <= 0)
             return "Error. Número no aceptado";
-        if(n % fizz == 0)
-            sol += "Fizz";
 
-        if(n % buzz == 0)
-            sol += "Buzz";
+        if (number % fizz == 0)
+            solution += "Fizz";
 
-        return sol;
+        if (number % buzz == 0)
+            solution += "Buzz";
+
+        if (number % fizz != 0 && number % buzz != 0)
+            solution = Integer.toString(number);
+
+        return solution;
     }
 }
