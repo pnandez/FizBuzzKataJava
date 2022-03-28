@@ -69,7 +69,7 @@ public class FizzBuzz_must {
     void check_if_contains_number_five() {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
-        assertEquals(fizzBuzz.play(51), "Buzz");
+        assertEquals(fizzBuzz.play(52), "Buzz");
         assertEquals(fizzBuzz.play(55), "Buzz");
     }
 }
