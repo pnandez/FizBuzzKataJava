@@ -40,4 +40,12 @@ public class FizzBuzz_must {
         assertArrayEquals(fizzBuzz.play(new int[] {1, 5}), new String[] {"1", "Buzz"});
         assertArrayEquals(fizzBuzz.play(new int[] {5, 65, 8}), new String[] {"Buzz", "Buzz", "8"});
     }
+
+    @Test
+    public void check_if_multiple_of_three_and_five() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        assertArrayEquals(fizzBuzz.play(new int[] {1, 15, 90}), new String[] {"1", "FizzBuzz", "FizzBuzz"});
+        assertArrayEquals(fizzBuzz.play(new int[] {30, 75, 81, 3}), new String[] {"FizzBuzz", "FizzBuzz", "81", "Buzz"});
+    }
 }
