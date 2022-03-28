@@ -25,4 +25,12 @@ public class FizzBuzz_must {
 
     }
 
+
+    @Test
+    public void check_if_multiple_of_three() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        assertArrayEquals(fizzBuzz.play(new int[] {1, 3}), new String[] {"1", "Fizz"});
+        assertArrayEquals(fizzBuzz.play(new int[] {2, 4, 3}), new String[] {"2", "4", "Fizz"});
+    }
 }
