@@ -21,6 +21,8 @@ public class FizzBuzz_must {
 
         assertArrayEquals(fizzBuzz.play(new int[] {-3}), null);
         assertArrayEquals(fizzBuzz.play(new int[] {4, -9}), null);
+        assertArrayEquals(fizzBuzz.play(new int[] {8, 105}), null);
+
     }
 
 }

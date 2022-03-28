@@ -11,6 +11,9 @@ public class FizzBuzz {
 
     public String[] play(int[] arrayOfNumbers) {
 
+        if(!checkIfArrayNumbersIsFizzBuzz(arrayOfNumbers))
+            return null;
+
         String[] solutionArray = new String[arrayOfNumbers.length];
 
         for(int i = 0; i < arrayOfNumbers.length; i++) {
@@ -19,4 +22,13 @@ public class FizzBuzz {
         return solutionArray;
     }
 
+    private boolean checkIfArrayNumbersIsFizzBuzz(int[] arrayOfNumbers) {
+        for (int number: arrayOfNumbers) {
+            if(number <= 0 || number > 100) {
+                return false;
+            }
+
+        }
+        return true;
+    }
 }
