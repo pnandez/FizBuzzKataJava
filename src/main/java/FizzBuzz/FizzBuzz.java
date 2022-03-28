@@ -1,13 +1,8 @@
 package FizzBuzz;
 
 public class FizzBuzz {
-    private int fizz;
-    private int buzz;
 
-    FizzBuzz() {
-        fizz = 3;
-        buzz = 5;
-    }
+    FizzBuzz() {}
 
     public String[] play(int[] arrayOfNumbers) {
 

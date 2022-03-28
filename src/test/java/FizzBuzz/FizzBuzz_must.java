@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzz_must {
+
     @Test
     public void returns_array_of_numbers_as_array_of_strings_with_numbers_or_empty_array_when_empty_array_is_received() {
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -13,7 +14,6 @@ public class FizzBuzz_must {
         assertArrayEquals(fizzBuzz.play(new int[] {1, 11, 22}), new String[] {"1", "11", "22"});
         assertArrayEquals(fizzBuzz.play(new int[] {}), new String[] {});
     }
-
 
     @Test
     public void return_null_when_error() {
@@ -24,7 +24,6 @@ public class FizzBuzz_must {
         assertArrayEquals(fizzBuzz.play(new int[] {8, 105}), null);
 
     }
-
 
     @Test
     public void check_if_multiple_of_three() {
