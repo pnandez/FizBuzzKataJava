@@ -19,7 +19,11 @@ public class FizzBuzz {
         for(int i = 0; i < arrayOfNumbers.length; i++) {
             if(arrayOfNumbers[i] % 3 == 0) {
                 solutionArray[i] = "Fizz";
-            } else
+            }
+            else if(arrayOfNumbers[i] % 5 == 0){
+                solutionArray[i] = "Buzz";
+            }
+            else
             solutionArray[i] =  Integer.toString(arrayOfNumbers[i]);
         }
         return solutionArray;
