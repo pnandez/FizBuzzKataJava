@@ -19,14 +19,12 @@ public class FizzBuzz_must {
     @Test
     void not_accept_negative_numbers_or_zero() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        NumberFormatException expectedException = new NumberFormatException("Número no aceptado");
 
-
-        assertEquals(fizzBuzz.play(0), expectedException.getMessage());
-        assertEquals(fizzBuzz.play(-1), expectedException.getMessage());
-        assertEquals(fizzBuzz.play(-100), expectedException.getMessage());
-        assertEquals(fizzBuzz.play(-5), expectedException.getMessage());
-        assertEquals(fizzBuzz.play(-3), expectedException.getMessage());
-        assertEquals(fizzBuzz.play(-20), expectedException.getMessage());
+        assertEquals(fizzBuzz.play(0), "Número no aceptado");
+        assertEquals(fizzBuzz.play(-1), "Número no aceptado");
+        assertEquals(fizzBuzz.play(300), "Número no aceptado");
+        assertEquals(fizzBuzz.play(-5), "Número no aceptado");
+        assertEquals(fizzBuzz.play(-3), "Número no aceptado");
+        assertEquals(fizzBuzz.play(-20),"Número no aceptado");
     }
 }
