@@ -46,6 +46,6 @@ public class FizzBuzz_must {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         assertArrayEquals(fizzBuzz.play(new int[] {1, 15, 90}), new String[] {"1", "FizzBuzz", "FizzBuzz"});
-        assertArrayEquals(fizzBuzz.play(new int[] {30, 75, 81, 3}), new String[] {"FizzBuzz", "FizzBuzz", "81", "Buzz"});
+        assertArrayEquals(fizzBuzz.play(new int[] {30, 75, 83, 3}), new String[] {"FizzBuzz", "FizzBuzz", "83", "Fizz"});
     }
 }

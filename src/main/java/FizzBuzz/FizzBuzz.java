@@ -12,7 +12,10 @@ public class FizzBuzz {
         String[] solutionArray = new String[arrayOfNumbers.length];
 
         for(int i = 0; i < arrayOfNumbers.length; i++) {
-            if(checkIfNumberIsDivisible(arrayOfNumbers[i],3)) {
+            if(checkIfNumberIsDivisible(arrayOfNumbers[i],3) && checkIfNumberIsDivisible(arrayOfNumbers[i], 5 )) {
+                solutionArray[i] = "FizzBuzz";
+            }
+            else if(checkIfNumberIsDivisible(arrayOfNumbers[i],3)) {
                 solutionArray[i] = "Fizz";
             }
             else if(checkIfNumberIsDivisible(arrayOfNumbers[i], 5 )){
