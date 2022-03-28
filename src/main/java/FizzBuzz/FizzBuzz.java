@@ -38,4 +38,8 @@ public class FizzBuzz {
         }
         return true;
     }
+
+    private boolean checkIfNumberIsDivisible(int numberToDivide, int divisor){
+        return numberToDivide % divisor == 0;
+    }
 }
