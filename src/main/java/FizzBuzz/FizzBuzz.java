@@ -10,6 +10,7 @@ public class FizzBuzz {
     }
 
     public String[] play(int[] arrayOfNumbers) {
+
         String[] solutionArray = new String[arrayOfNumbers.length];
 
         for(int i = 0; i < arrayOfNumbers.length; i++) {
@@ -17,4 +18,5 @@ public class FizzBuzz {
         }
         return solutionArray;
     }
+
 }

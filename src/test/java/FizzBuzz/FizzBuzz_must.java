@@ -11,7 +11,7 @@ public class FizzBuzz_must {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         assertArrayEquals(fizzBuzz.play(new int[] {1, 10, 20}), new String[] {"1", "10", "20"});
-
+        assertArrayEquals(fizzBuzz.play(new int[] {}), new String[] {});
     }
 
 }
