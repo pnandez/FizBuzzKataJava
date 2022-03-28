@@ -17,8 +17,8 @@ public class FizzBuzz {
         if (number % buzz == 0)
             solution += "Buzz";
 
-        if (number % fizz != 0 && number % buzz != 0)
-            solution = Integer.toString(number);
+        if (!number.isBuzzNumber() && !number.isFizzNumber())
+            solution = new FizzBuzzString(number.toString());
 
         return solution.getString();
     }
