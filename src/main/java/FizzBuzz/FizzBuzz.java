@@ -13,9 +13,13 @@ public class FizzBuzz {
         if(number % 3 == 0 || checkIfContainsNumber(number, 3))
             return "Fizz";
 
-        if(number % 5 == 0)
+        if(number % 5 == 0 || checkIfContainsNumber(number, 5))
             return "Buzz";
 
         return Integer.toString(number);
+    }
+
+    private boolean checkIfContainsNumber(int numberToCheck, int numberToContain) {
+        return Integer.toString(numberToCheck).contains(Integer.toString(numberToContain));
     }
 }
