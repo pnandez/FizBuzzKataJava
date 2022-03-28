@@ -27,4 +27,14 @@ public class FizzBuzz_must {
         assertEquals(fizzBuzz.play(-3), "Número no aceptado");
         assertEquals(fizzBuzz.play(-20),"Número no aceptado");
     }
+
+    @Test
+    void check_if_multiple_of_three() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        assertEquals(fizzBuzz.play(3), "Fizz");
+        assertEquals(fizzBuzz.play(6), "Fizz");
+        assertEquals(fizzBuzz.play(9), "Fizz");
+        assertEquals(fizzBuzz.play(36), "Fizz");
+    }
 }
