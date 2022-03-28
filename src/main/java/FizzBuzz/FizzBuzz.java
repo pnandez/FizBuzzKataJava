@@ -17,10 +17,10 @@ public class FizzBuzz {
         String[] solutionArray = new String[arrayOfNumbers.length];
 
         for(int i = 0; i < arrayOfNumbers.length; i++) {
-            if(arrayOfNumbers[i] % 3 == 0) {
+            if(checkIfNumberIsDivisible(arrayOfNumbers[i],3)) {
                 solutionArray[i] = "Fizz";
             }
-            else if(arrayOfNumbers[i] % 5 == 0){
+            else if(checkIfNumberIsDivisible(arrayOfNumbers[i], 5 )){
                 solutionArray[i] = "Buzz";
             }
             else
