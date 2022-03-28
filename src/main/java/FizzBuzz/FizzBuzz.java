@@ -7,10 +7,10 @@ public class FizzBuzz {
         if(number <= 0 || number > 100)
             return "Número no aceptado";
 
-        if(number % 3 == 0 && number % 5 == 0)
+        if((number % 3 == 0 || checkIfContainsNumber(number, 3)) && number % 5 == 0)
             return "FizzBuzz";
 
-        if(number % 3 == 0)
+        if(number % 3 == 0 || checkIfContainsNumber(number, 3))
             return "Fizz";
 
         if(number % 5 == 0)
