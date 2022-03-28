@@ -37,4 +37,14 @@ public class FizzBuzz_must {
         assertEquals(fizzBuzz.play(9), "Fizz");
         assertEquals(fizzBuzz.play(36), "Fizz");
     }
+
+    @Test
+    void check_if_multiple_of_five(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(fizzBuzz.play(5), "Buzz");
+        assertEquals(fizzBuzz.play(20), "Buzz");
+        assertEquals(fizzBuzz.play(10), "Buzz");
+        assertEquals(fizzBuzz.play(35), "Buzz");
+        assertEquals(fizzBuzz.play(100), "Buzz");
+    }
 }
