@@ -1,22 +1,18 @@
 package FizzBuzzKata;
 
 public class FizzBuzz {
-    private int fizz;
-    private int buzz;
 
-    FizzBuzz() {
-        fizz = 3;
-        buzz = 5;
-    }
 
-    public String play(Integer number) {
-        String solution = "";
+    FizzBuzz() {}
 
-        if (number <= 0)
+    public String play(FizzBuzzNumber number) {
+        FizzBuzzString solution = new FizzBuzzString("");
+
+        if (number.isNotFizzBuzzNumber())
             return "Error. Número no aceptado";
 
-        if (number % fizz == 0)
-            solution += "Fizz";
+        if (number.isFizzNumber())
+            solution.add(new FizzBuzzString("Fizz"));
 
         if (number % buzz == 0)
             solution += "Buzz";
@@ -24,6 +20,6 @@ public class FizzBuzz {
         if (number % fizz != 0 && number % buzz != 0)
             solution = Integer.toString(number);
 
-        return solution;
+        return solution.getString();
     }
 }
